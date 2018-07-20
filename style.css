@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Maven Pro", sans-serif;
+
+  color: black;
+  background-color: rgba(205,205,205, 0.3);
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 auto;
+}
+
+main section {
+  margin-bottom: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.start div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 50vh;
+}
+
+.row {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-right: 35px;
+  padding-left: 35px;
+
+  text-align: center;
+}
+
+.score {
+  font-family: "Patua One", cursive;
+
+  padding: 15px;
+
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+input[type=radio] {
+  float: both;
+
+  opacity: 0;
+
+  appearance: none;
+}
+
+button, label {
+  font-family: "Patua One", cursive;
+  font-size: 16px;
+
+  width: 100%;
+  height: 55px;
+
+  text-align: center;
+
+  color: inherit;
+  border: 5px solid #efefef;
+  border-radius: 15px;
+}
+
+button {
+  background-color: #7777a9;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 73.4px;
+}
+
+.feedback {
+  margin-top: 20px;
+}
+
+.feedback h3 {
+  margin: 10px 0px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(204,119,34);
+}
+
+label:focus, button:focus, input:focus + label {
+  border: 1px solid transparent;
+}
+
+label:hover, button:hover {
+  border: 1px solid transparent;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.final {
+  text-align: center;
+}
+
+input:checked + label {
+  background-color: gold;
+}
+
+.hidden {
+  display: none;
+}
+
+fieldset {
+  border: 0;
+}
+
+@media not all and (hover: none) {
+  label:hover, button:hover {
+    border: 5px solid #efefef;
+  }
+}
+
+@media only screen and (min-width : 800px) {
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
