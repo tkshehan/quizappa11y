@@ -177,7 +177,7 @@ function renderPage(page) {
     }
     $('.js-feedback').html(`
       <div class="row">
-        <h3>${result}</h3>
+        <h2>${result}</h2>
         <h3>It was ${quizState.currentQuestionData.answer}</h3>
       </div>
       <div class="row button-row">
@@ -190,8 +190,8 @@ function renderPage(page) {
     let resultText = determineResultText();
 
     $('.js-final').html(`
-    <h2>You Scored ${quizState.score} out of ${quizState.numOfQuestions}</h2>
-    <h1>${resultText}</h1>
+    <h2>${resultText}</h1>
+    <h3>You Scored ${quizState.score} out of ${quizState.numOfQuestions}</h2>
     <div class="row">
       <button class="js-final-button">Try Again?</button>
     </div>
