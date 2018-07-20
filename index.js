@@ -102,7 +102,7 @@ function renderPage(page) {
 
   function buildScore() {
     $('.js-score').html(`
-      <h3>Question ${quizState.currentQuestionNum}/${quizState.numOfQuestions}</h3>
+      <h2>Question ${quizState.currentQuestionNum}/${quizState.numOfQuestions}</h3>
       <h3>Score: ${quizState.score}</h3>
   `);
   }
@@ -177,7 +177,7 @@ function renderPage(page) {
     }
     $('.js-feedback').html(`
       <div class="row">
-        <h3>${result}</h3>
+        <h2>${result}</h3>
         <h3>It was ${quizState.currentQuestionData.answer}</h3>
       </div>
       <div class="row button-row">
@@ -191,7 +191,7 @@ function renderPage(page) {
 
     $('.js-final').html(`
     <h2>You Scored ${quizState.score} out of ${quizState.numOfQuestions}</h2>
-    <h1>${resultText}</h1>
+    <h3>${resultText}</h1>
     <div class="row">
       <button class="js-final-button">Try Again?</button>
     </div>
